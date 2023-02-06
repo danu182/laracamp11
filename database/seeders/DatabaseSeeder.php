@@ -14,6 +14,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+
+        $this->call([
+            CampTableSeeder::class,
+            CampbenefitTableSeeder::class,
+            AdminUserSeeder::class,
+        ]);
+
+        
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
